@@ -1,28 +1,47 @@
 <!DOCTYPE html>
-<html lang="PT-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/css/estilo.css">
-    <title>Exemplo 05</title>
+    <title>Exemplo-5</title>
 </head>
 <body>
     <div class="main">
         <header>
             <h1>Crie sua Conta</h1>
-        </header>   
-        
+        </header>
+
         <form class="form" id="form">
             <div class="controle">
                 <label for="nome">Nome</label>
-                <input type="text"  id="nome">
-                <i class="sucesso"><img src="./src/assets/sucesso.svg" alt=""></i>
-                <i class="error"><img src="./src/assets/erro.svg" alt=""></i>
-                <small> Error </small>
+                <input type="text" id="nome"/>
+                <i class="sucesso"><img src="./src/assets/sucesso.svg"/></i>
+                <i class="error"><img src="./src/assets/erro.svg"/></i>
+                <small>Error</small>
             </div>
-        </form>
-    </div>
 
+            <div class="controle">
+                <label for="email">Email</label>
+                <input type="text" id="email"/>
+                <i class="sucesso"><img src="./src/assets/sucesso.svg"/></i>
+                <i class="error"><img src="./src/assets/erro.svg"/></i>
+                <small>Error</small>
+            </div>
+
+            <div class="controle">
+                <label for="senha">Senha</label>
+                <input type="password" id="senha"/>
+                <i class="sucesso"><img src="./src/assets/sucesso.svg"/></i>
+                <i class="error"><img src="./src/assets/erro.svg"/></i>
+                <small>Error</small>
+            </div>
+
+            <button type="submit" onclick="cadastrar()">Cadastar</button>
+
+        </form>
+
+    </div>
 
 
     <script src="./src/js/script.js"></script>
